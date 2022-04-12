@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Számológép</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            html, body{
+                height: 100%;
+            }
+
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container{
+                width: 300px;
+                min-height: 100px;
+                border: 1px solid grey;
+                box-shadow: 0 0 10px grey;
+                padding: 15px;
+            }
+
+            input{
+                width: 100%;
+                padding:  6px;
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            .buttons{
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            button{
+                width: 25%;
+                padding:  6px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <input type="text" name="input" id="kijelzo">
+            <div class="buttons">
+                <button>0</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+
+                <button>8</button>
+                <button>9</button>
+                <button>+</button>
+                <button>-</button>
+
+                <button>*</button>
+                <button>/</button>
+                <button>C</button>
+                <button>=</button>
+            </div>
+        </div>
+
+        <script src="szamologep.js"></script>
+    </body> 
+</html> 
